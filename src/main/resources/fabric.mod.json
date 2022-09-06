@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "invicshuds",
+  "version": "${version}",
+
+  "name": "Invics Huds",
+  "description": "All in 1 customizable HUD mod for newer versions of Minecraft",
+  "authors": [
+    "Invictable"
+  ],
+  "contact": {
+    "homepage": "https://solo.to/invic",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/invicsHuds/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.invic.invicshuds.invicsHuds"
+    ],
+    "client": [
+      "me.invic.invicshuds.clientInitializer"
+    ]
+  },
+  "mixins": [
+    "invicshuds.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
